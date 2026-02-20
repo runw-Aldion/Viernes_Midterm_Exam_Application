@@ -17,12 +17,12 @@
         </thead>
         <tbody>
             @foreach($products as $index => $product)
-                <tr>
-                    <td>{{ $index + 1 }}</td>
-                    <td>{{ $product['name'] }}</td>
-                    <td>{{ $product['brand'] }}</td>
-                    <td>{{ number_format($product['price'], 2) }}</td>
-                </tr>
+            <tr>
+                <td>{{ $index + 1 }}</td>
+                <td>{{ $product['brand'] }}</td>
+                <td>{{ $product['model'] }}</td>
+                <td>{{ number_format($product['price'], 2) }}</td>
+            </tr>
             @endforeach
         </tbody>
     </table>
